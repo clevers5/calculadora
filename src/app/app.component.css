@@ -1,0 +1,28 @@
+body{
+    background-image: url(../assets/svg/gggrain.svg);
+    background-size:cover;
+    height: 1034px;
+ 
+}
+header{
+    background-color: azure;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(15, 4, 56);
+    margin-bottom: 0;
+    padding-bottom: 5px;
+    padding-top: 30px;
+}
+img{
+    width: 130px;
+}
+.logo{
+display: flex;
+justify-content: center;
+padding-bottom: 5px;
+}
+
