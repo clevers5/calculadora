@@ -17,12 +17,28 @@ h3{
     padding-bottom: 5px;
     padding-top: 30px;
 }
+
 img{
     width: 130px;
 }
+
 .logo{
 display: flex;
 justify-content: center;
 padding-bottom: 5px;
+}
+
+.pc{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    padding-top: 100px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: medium;
+    font-weight: 800;
 }
 
