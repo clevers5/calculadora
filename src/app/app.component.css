@@ -23,9 +23,9 @@ img{
 }
 
 .logo{
-display: flex;
-justify-content: center;
-padding-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5px;
 }
 
 .pc{
@@ -42,3 +42,43 @@ p{
     font-weight: 800;
 }
 
+.contenedorCalcu{
+    height: 500px;
+    background-color: rgba(17, 17, 17, 0.617);
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(67, 0, 0, 0.384);
+}
+
+#result{
+    border-radius: 10px;
+    border-color: rgb(137, 27, 27);
+}
+
+.label1{
+    font-weight: 500;
+    color: rgb(226, 226, 226);
+}
+
+.numeros{
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.333);
+    border: none;
+    color: aliceblue;
+    padding: 4px;
+}
+
+.botonasignar{
+    border-radius: 5px;
+    background-color: rgba(201, 124, 35, 0.629);
+    border: none;
+    color: rgba(255, 255, 255, 0.649);
+    padding: 4px;
+}
+
+.numeros:hover{
+    background-color: rgba(0, 0, 0, 0.521);
+}
+
+.botonasignar:hover {
+    background-color: rgba(178, 98, 6, 0.629);
+}
