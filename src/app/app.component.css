@@ -52,6 +52,7 @@ p{
 #result{
     border-radius: 10px;
     border-color: rgb(137, 27, 27);
+    text-align: right;
 }
 
 .label1{

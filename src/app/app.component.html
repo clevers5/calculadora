@@ -12,36 +12,142 @@
     <div class="contenedorCalcu w-50 my-5 p-4 offset-3">
       <div class="boton d-flex justify-content-center">
         <label for="result" class="label1">Resultado:</label>
-        <input type="number" name="" id="result" class="mx-3" />
+        <input
+          type="text"
+          name=""
+          id="result"
+          [(ngModel)]="screen"
+          class="mx-3"
+        />
       </div>
       <div class="Cajanumeros p-4">
         <div class="d-flex justify-content-center pt-3">
-          <input type="button" class="col-md-2 mx-1 numeros" value="7" />
-          <input type="button" class="col-md-2 mx-1 numeros" value="8" />
-          <input type="button" class="col-md-2 mx-1 numeros" value="9" />
-          <input type="button" class="col-md-2 mx-1 numeros" value="DEL" />
-          <input type="button" class="col-md-2 mx-1 numeros" value="AC" />
+          <input
+            type="button"
+            (click)="enterValue('7')"
+            class="col-md-2 mx-1 numeros"
+            value="7"
+          />
+          <input
+            type="button"
+            (click)="enterValue('8')"
+            class="col-md-2 mx-1 numeros"
+            value="8"
+          />
+          <input
+            type="button"
+            (click)="enterValue('9')"
+            class="col-md-2 mx-1 numeros"
+            value="9"
+          />
+          <input
+            type="button"
+            (click)="enterValue('')"
+            class="col-md-2 mx-1 numeros"
+            value="DEL"
+          />
+          <input
+            type="button"
+            (click)="clear()"
+            class="col-md-2 mx-1 numeros"
+            value="AC"
+          />
         </div>
         <div class="d-flex justify-content-center pt-3">
-          <input type="button" class="col-md-2 mx-1 numeros" value="4" />
-          <input type="button" class="col-md-2 mx-1 numeros" value="5" />
-          <input type="button" class="col-md-2 mx-1 numeros" value="6" />
-          <input type="button" class="col-md-2 mx-1 numeros" value="x" />
-          <input type="button" class="col-md-2 mx-1 numeros" value="%" />
+          <input
+            type="button"
+            (click)="enterValue('4')"
+            class="col-md-2 mx-1 numeros"
+            value="4"
+          />
+          <input
+            type="button"
+            (click)="enterValue('5')"
+            class="col-md-2 mx-1 numeros"
+            value="5"
+          />
+          <input
+            type="button"
+            (click)="enterValue('6')"
+            class="col-md-2 mx-1 numeros"
+            value="6"
+          />
+          <input
+            type="button"
+            (click)="condition('*')"
+            class="col-md-2 mx-1 numeros"
+            value="x"
+          />
+          <input
+            type="button"
+            (click)="condition('/')"
+            class="col-md-2 mx-1 numeros"
+            value="/"
+          />
         </div>
         <div class="d-flex justify-content-center pt-3">
-          <input type="button" class="col-md-2 mx-1 numeros" value="1" />
-          <input type="button" class="col-md-2 mx-1 numeros" value="2" />
-          <input type="button" class="col-md-2 mx-1 numeros" value="3" />
-          <input type="button" class="col-md-2 mx-1 numeros" value="+" />
-          <input type="button" class="col-md-2 mx-1 numeros" value="-" />
+          <input
+            type="button"
+            (click)="enterValue('1')"
+            class="col-md-2 mx-1 numeros"
+            value="1"
+          />
+          <input
+            type="button"
+            (click)="enterValue('2')"
+            class="col-md-2 mx-1 numeros"
+            value="2"
+          />
+          <input
+            type="button"
+            (click)="enterValue('3')"
+            class="col-md-2 mx-1 numeros"
+            value="3"
+          />
+          <input
+            type="button"
+            (click)="condition('+')"
+            class="col-md-2 mx-1 numeros"
+            value="+"
+          />
+          <input
+            type="button"
+            (click)="condition('-')"
+            class="col-md-2 mx-1 numeros"
+            value="-"
+          />
         </div>
         <div class="d-flex justify-content-center pt-3">
-          <input type="button" class="col-md-2 mx-1 numeros" value="0" />
-          <input type="button" class="col-md-2 mx-1 numeros" value="," />
-          <input type="button" class="col-md-2 mx-1 numeros" value="+/-" />
-          <input type="button" class="col-md-1 mx-1 numeros" value="Ans" />
-          <input type="button" class="col-md-3 mx-1 botonasignar" value="=" />
+          <input
+            type="button"
+            (click)="enterValue('0')"
+            class="col-md-2 mx-1 numeros"
+            value="0"
+          />
+          <input
+            type="button"
+            (click)="enterValue(',')"
+            class="col-md-2 mx-1 numeros"
+            value=","
+          />
+          <input
+            type="button"
+            (click)="condition('+' || '-')"
+            class="col-md-2 mx-1 numeros"
+            value="+/-"
+          />
+          <input
+            type="button"
+            (click)="enterValue('')"
+            class="col-md-1 mx-1 numeros"
+            value="Ans"
+          />
+          <input
+            type="button"
+            (click)="result()"
+            class="col-md-3 mx-1 botonasignar"
+            value="="
+          />
         </div>
       </div>
     </div>
