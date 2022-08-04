@@ -37,6 +37,12 @@ export class AppComponent implements OnInit {
     this.screen = this.screen + value;
     this.n2 = value;
   }
+
+  condition1(value: string){
+    
+    this.screen = this.screen + value;
+    this.n2 = value;
+  }
   
   clear(){
     this.screen = "";
@@ -45,6 +51,11 @@ export class AppComponent implements OnInit {
     this.n3 = "";
     this.n4 = "";
   }
+
+  Del(){
+    this.screen = this.screen.slice(0,-1)
+  }
+
 
   result(){
     if (this.n2 == '+') {

@@ -49,10 +49,35 @@ p{
     box-shadow: 5px 5px 10px rgba(67, 0, 0, 0.384);
 }
 
+@media (max-width: 680px) {
+    .contenedorCalcu {
+        min-width: 240px;
+        margin-left: 62px;
+    }
+
+}
+
+
+.boton {
+    padding-bottom: 50px;
+}
+
+
+
 #result{
     border-radius: 10px;
     border-color: rgb(137, 27, 27);
     text-align: right;
+}
+
+@media (max-width: 680px) {
+    .boton {
+        display: flex;
+        justify-content: center;
+        flex-direction:column;
+        flex-wrap: nowrap;
+    }
+
 }
 
 .label1{
@@ -66,6 +91,23 @@ p{
     border: none;
     color: aliceblue;
     padding: 4px;
+}
+
+@media (max-width: 690px) {
+    .numeros {
+        padding: 0;
+        margin: 1px;
+    }
+
+}
+
+
+@media (max-width: 690px) {
+    .Cajanumeros {
+        padding: 0;
+        
+    }
+
 }
 
 .botonasignar{
