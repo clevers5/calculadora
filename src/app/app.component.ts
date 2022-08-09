@@ -22,7 +22,7 @@ export class AppComponent implements OnInit {
   //Calculadora
 
   enterValue(value:string){
-    if((this.n2 == "+") || (this.n2 == "*" || (this.n2 == "/"))){
+    if((this.n2 == "+") || (this.n2 == "*" || (this.n2 == "/") || (this.n2 == "-"))){
       this.n4 = this.n4 + value;
       this.screen = this.screen + value;
       this.n3 = this.n4;
